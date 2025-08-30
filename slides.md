@@ -9,10 +9,24 @@ fonts:
 transition: fade-out
 ---
 
-# 首頁
+<div class="flex flex-col items-center">
+  <h1 class="text-5xl font-extrabold text-[#A4CD44]">OFFWORK</h1>
+  <p class="text-lg">AAPD x 六角學院成果展示</p>
+  設計組：Alvie | Anna | Jerry | Maggie | Oliver | Yien<br />
+  前端組：Aaron | Clove | Tippy
+</div>
 
 ---
+layout: two-cols
+layoutClass: gap-16
+---
 
-# 第二頁
+# 簡報目錄
 
-第二頁文字...
+快速導覽到要展示的內容
+
+<img src="/images/toc-deco.webp" alt="裝飾圖案" class="max-w-80" />
+
+::right::
+
+<Toc text-lg minDepth="1" maxDepth="2" />
