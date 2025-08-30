@@ -2,10 +2,10 @@
 layout: cover
 highlighter: default
 title: OFFWORK
-favicon: '/img/favicon.png'
+favicon: "/favicon.ico"
 fonts:
-  sans: 'Noto Sans TC'
-  mono: 'Fira Code'
+  sans: "Noto Sans TC"
+  mono: "Fira Code"
 ---
 
 # 首頁
