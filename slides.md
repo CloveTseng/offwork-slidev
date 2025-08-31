@@ -30,3 +30,20 @@ layoutClass: gap-16
 ::right::
 
 <Toc text-lg minDepth="1" maxDepth="2" />
+
+---
+layout: image-right
+image: /images/home-and-ceremony/deco.webp
+title: 流程導覽
+---
+
+<h2 class="text-5xl font-extrabold text-[#A4CD44]">先來看我們的開發成果</h2>
+<a href="https://offwork.clovetseng.dev/" target="_blank">https://offwork.clovetseng.dev/</a>
+
+---
+layout: center
+title: 開發心得分享 | 首頁 & 下班儀式 | Aaron
+---
+
+<h1 class="text-5xl font-extrabold text-[#A4CD44]">首頁 & 下班儀式開發心得分享</h1>
+<p class="text-lg text-center">by Aaron</p>
