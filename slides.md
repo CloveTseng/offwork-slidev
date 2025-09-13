@@ -50,6 +50,7 @@ title: 開發使用的技術
   <ul class="text-lg">
     <li>Nuxt 4</li>
     <li>Tailwind CSS</li>
+    <li>sessionStorage</li>
     <li>GSAP</li>
     <li>Nuxt Lottie</li>
     <li>git</li>
