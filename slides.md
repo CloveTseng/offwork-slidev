@@ -42,8 +42,16 @@ title: 流程導覽
 
 ---
 layout: center
-title: 開發心得分享 | 首頁 & 下班儀式 | Aaron
+title: 開發使用的技術
 ---
 
-<h1 class="text-5xl font-extrabold text-[#A4CD44]">首頁 & 下班儀式開發心得分享</h1>
-<p class="text-lg text-center">by Aaron</p>
+<div class="flex flex-col items-center">
+  <h1 class="text-5xl font-extrabold text-[#A4CD44]">開發使用的技術</h1>
+  <ul class="text-lg">
+    <li>Nuxt 4</li>
+    <li>Tailwind CSS</li>
+    <li>GSAP</li>
+    <li>Nuxt Lottie</li>
+    <li>git</li>
+  </ul>
+</div>
