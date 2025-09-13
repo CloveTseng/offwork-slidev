@@ -56,3 +56,10 @@ title: 開發使用的技術
     <li>git</li>
   </ul>
 </div>
+
+---
+layout: center
+title: 開發過程遇到的困難與解決方式
+---
+
+<h1 class="text-5xl font-extrabold text-[#A4CD44]">開發過程遇到的困難與解決方式...</h1>
