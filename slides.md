@@ -45,18 +45,46 @@ layout: center
 title: 開發使用的技術
 ---
 
-<div class="flex flex-col items-center">
-  <h1 class="font-extrabold text-[#A4CD44]">開發使用的技術</h1>
-  <ul>
-    <li>Nuxt 4</li>
-    <li>Tailwind CSS</li>
-    <li>sessionStorage</li>
-    <li>GSAP</li>
-    <li>Nuxt Lottie</li>
-    <li>git</li>
-    <li>Slidev</li>
-  </ul>
-</div>
+<h1 class="font-extrabold text-[#A4CD44] text-center">開發使用的技術</h1>
+
+  <table class="border-collapse">
+    <thead>
+      <tr>
+        <th class="border px-4 py-2 text-left">技術</th>
+        <th class="border px-4 py-2 text-left">說明</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="border px-4 py-2">Nuxt 4</td>
+        <td class="border px-4 py-2">切版、開路由、拆元件、切 Layout</td>
+      </tr>
+      <tr>
+        <td class="border px-4 py-2">Tailwind CSS</td>
+        <td class="border px-4 py-2">CSS 框架，tailwind config 套用設計系統</td>
+      </tr>
+      <tr>
+        <td class="border px-4 py-2">sessionStorage</td>
+        <td class="border px-4 py-2">紀錄大吼、呼吸時間與是否已放鬆（isRelieved）</td>
+      </tr>
+      <tr>
+        <td class="border px-4 py-2">GSAP</td>
+        <td class="border px-4 py-2">分析頁面動畫</td>
+      </tr>
+      <tr>
+        <td class="border px-4 py-2">Nuxt Lottie</td>
+        <td class="border px-4 py-2">大吼分貝動畫</td>
+      </tr>
+      <tr>
+        <td class="border px-4 py-2">git</td>
+        <td class="border px-4 py-2">版本控制與 Vercel 部署</td>
+      </tr>
+      <tr>
+        <td class="border px-4 py-2">Slidev</td>
+        <td class="border px-4 py-2">製作這份簡報</td>
+      </tr>
+    </tbody>
+  </table>
 
 ---
 layout: center
