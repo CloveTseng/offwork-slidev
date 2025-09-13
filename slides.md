@@ -112,6 +112,7 @@ title: 團隊協作、工作分配
 <ul class="text-xs">
  <li>分析頁面&流程</li>
  <li>GSAP 動畫</li>
+ <li>使用 ECharts 來處理圖表</li>
 </ul>
 
 <h2 class="font-bold">Tippy</h2>
