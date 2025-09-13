@@ -54,6 +54,7 @@ title: 開發使用的技術
     <li>GSAP</li>
     <li>Nuxt Lottie</li>
     <li>git</li>
+    <li>Slidev</li>
   </ul>
 </div>
 
