@@ -63,3 +63,31 @@ title: 開發過程遇到的困難與解決方式
 ---
 
 <h1 class="text-5xl font-extrabold text-[#A4CD44]">開發過程遇到的困難與解決方式...</h1>
+
+---
+title: 團隊協作、工作分配
+---
+
+<h1 class="text-5xl font-extrabold text-[#A4CD44]">團隊協作、工作分配</h1>
+
+<h2 class="font-bold">Aaron</h2>
+
+<ul class="text-sm">
+ <li>首頁兩種狀態&下班儀式流程</li>
+ <li>Bottom Sheet、Modal 元件製作</li>
+ <li>手機外框 Layout 製作（特別感謝 Barry）</li>
+</ul>
+
+<h2 class="font-bold">Clove</h2>
+
+<ul class="text-sm">
+ <li>分析頁面&流程</li>
+ <li>GSAP 動畫</li>
+</ul>
+
+<h2 class="font-bold">Tippy</h2>
+
+<ul class="text-sm">
+ <li>我的頁面&流程</li>
+ <li>時間捲動元件</li>
+</ul>
