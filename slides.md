@@ -10,8 +10,8 @@ transition: fade-out
 ---
 
 <div class="flex flex-col items-center">
-  <h1 class="text-5xl font-extrabold text-[#A4CD44]">OFFWORK</h1>
-  <p class="text-lg">AAPD x 六角學院成果展示</p>
+  <h1 class="font-extrabold text-[#A4CD44]">OFFWORK</h1>
+  <p>AAPD x 六角學院成果展示</p>
   設計組：Alvie | Anna | Jerry | Maggie | Oliver | Yien<br />
   前端組：Aaron | Clove | Tippy
 </div>
@@ -37,7 +37,7 @@ image: /images/home-and-ceremony/deco.webp
 title: 流程導覽
 ---
 
-<h2 class="text-5xl font-extrabold text-[#A4CD44]">先來看我們的開發成果</h2>
+<h2 class="font-extrabold text-[#A4CD44]">先來看我們的開發成果</h2>
 <a href="https://offwork.clovetseng.dev/" target="_blank">https://offwork.clovetseng.dev/</a>
 
 ---
@@ -46,8 +46,8 @@ title: 開發使用的技術
 ---
 
 <div class="flex flex-col items-center">
-  <h1 class="text-5xl font-extrabold text-[#A4CD44]">開發使用的技術</h1>
-  <ul class="text-lg">
+  <h1 class="font-extrabold text-[#A4CD44]">開發使用的技術</h1>
+  <ul>
     <li>Nuxt 4</li>
     <li>Tailwind CSS</li>
     <li>sessionStorage</li>
@@ -63,17 +63,17 @@ layout: center
 title: 開發過程遇到的困難與解決方式
 ---
 
-<h1 class="text-5xl font-extrabold text-[#A4CD44]">開發過程遇到的困難與解決方式...</h1>
+<h1 class="font-extrabold text-[#A4CD44]">開發過程遇到的困難與解決方式...</h1>
 
 ---
 title: 團隊協作、工作分配
 ---
 
-<h1 class="text-5xl font-extrabold text-[#A4CD44]">團隊協作、工作分配</h1>
+<h1 class="font-extrabold text-[#A4CD44]">團隊協作、工作分配</h1>
 
 <h2 class="font-bold">Aaron</h2>
 
-<ul class="text-sm">
+<ul class="text-xs">
  <li>首頁兩種狀態&下班儀式流程</li>
  <li>Bottom Sheet、Modal 元件製作</li>
  <li>手機外框 Layout 製作（特別感謝 Barry）</li>
@@ -81,14 +81,14 @@ title: 團隊協作、工作分配
 
 <h2 class="font-bold">Clove</h2>
 
-<ul class="text-sm">
+<ul class="text-xs">
  <li>分析頁面&流程</li>
  <li>GSAP 動畫</li>
 </ul>
 
 <h2 class="font-bold">Tippy</h2>
 
-<ul class="text-sm">
+<ul class="text-xs">
  <li>我的頁面&流程</li>
  <li>時間捲動元件</li>
 </ul>
