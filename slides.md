@@ -93,6 +93,17 @@ title: 開發過程遇到的困難與解決方式
 
 <h1 class="font-extrabold text-[#A4CD44]">開發過程遇到的困難與解決方式...</h1>
 
+<!--
+Aaron：
+一開始在做「平穩呼吸法」呼吸練習頁面時，因為動畫效果比較少見又有點複雜，加上我對 mask 的用法也不太熟，所以卡了滿久。後來花了很多時間研究、問 GPT，才把問題解決。
+
+Clove：
+遇到的困難與解決方式...
+
+Tippy：
+遇到的困難與解決方式...
+-->
+
 ---
 title: 團隊協作、工作分配
 ---
@@ -123,8 +134,19 @@ title: 團隊協作、工作分配
 </ul>
 
 ---
-layout: center
 title: 參加研發營的收穫與成長
 ---
 
 <h1 class="font-extrabold text-[#A4CD44]">參加研發營的收穫與成長</h1>
+
+<h2 class="font-bold">Aaron</h2>
+
+很難得有機會能練習到像 AAPD 這種「非常規版面」的網站，在挑戰切版技巧的同時，對我來說也是一次很棒的經驗。
+
+<h2 class="font-bold">Clove</h2>
+
+收穫與成長...
+
+<h2 class="font-bold">Tippy</h2>
+
+收穫與成長...
