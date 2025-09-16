@@ -82,7 +82,7 @@ layoutClass: gap-16
 
 等一下會帶大家參觀我們的開發成果以及 APP的流程
 
-然後是我們使用的技術
+然後是我們使用的技術及亮點
 
 以及之中遇到的困難和解決方式
 
@@ -116,7 +116,7 @@ title: 開發成果流程導覽
 <!-- 
 先來看我們的發表成果：
 
-這是我們這一次開發的健康生活 APP，
+這是我們這一次開發的健康生活 APP OFFWORK，
 
 1. 首頁：下班的時候已經累積了許多壞心情，所以大家可以看到火山君都快爆發了，
 2. 下班儀式：使用者可以從首頁的『下班儀式』來吼一吼、或是呼吸(點擊『先躺平』離開)
@@ -131,8 +131,6 @@ title: 開發成果流程導覽
 ---
 layout: center
 title: 開發使用的技術
-dragPos:
-  square: 337,207,266,_
 ---
 
 <h1 class="font-extrabold text-[#A4CD44] text-center">開發使用的技術</h1>
@@ -175,13 +173,25 @@ dragPos:
       </tr>
     </tbody>
   </table>
-<img src="/images/structure.png" v-drag="'square'" v-click="[1, 2]" />
-<img src="/images/tailwind-config.png" v-drag="'square'" v-click="[2, 3]" />
+  <v-drag pos="337,207,266,_">
+    <img src="/images/structure.png" v-click="[1, 2]" />
+  </v-drag>
+  <v-drag pos="337,207,266,_">
+    <img src="/images/tailwind-config.png" v-click="[2, 3]" />
+  </v-drag>
+  <v-drag pos="337,207,266,_">
+    <img src="/images/before.png" v-click="[3, 4]" />
+  </v-drag>
+  <v-drag pos="337,207,266,_">
+    <img src="/images/after.png" v-click="[3, 4]" />
+  </v-drag>
 
 <!--
 [click] 我們主要是使用 Nuxt 4 來進行開發，會選擇 Nuxt 的原因是因為能夠大量的簡化開發的流程，他可以自動化幫我們生成路由以及自動引入常見的 Vue API ，以及簡化許多環境設定的時間，讓我們可以專注在切版、拆分元件跟 layout 上面
 
 [click] 在 UI 的部份我們是使用 TailwindCSS，除了能直接在 class 撰寫樣式，省去額外寫 css 的步驟，我們還在 `tailwind.config` 中套用設計系統，能統一風格並且也加速開發效率
+
+[click] 在呼吸或大吼之後，就會把資訊存在 sessionStorage 裡面，
 -->
 
 ---
@@ -267,5 +277,6 @@ title: 參加研發營的收穫與成長
 
 ---
 layout: center 
+hideInToc: true
 ---
 # END
