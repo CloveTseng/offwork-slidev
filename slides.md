@@ -223,7 +223,7 @@ dragPos:
   <h4 v-click>Aaron：開營即結訓</h4>
 </div>
 <div v-click="[1,2]">
-    <img src="/images/aaron-highlight.png" v-drag="'aaron'" />
+  <img src="/images/aaron-highlight.png" v-drag="'aaron'" />
 </div>
 <div class="flex">
   <img src="/images/avatar/Clove.svg" width="50px" />
@@ -275,6 +275,10 @@ Tippy：
 
 ---
 title: 團隊協作、工作分配
+dragPos:
+  index: 341,148,157,308
+  analyze: 505,149,160,310
+  my: 678,148,162,310
 ---
 
 <h1 class="font-extrabold text-[#A4CD44]">團隊協作、工作分配</h1>
@@ -301,26 +305,65 @@ title: 團隊協作、工作分配
  <li>我的頁面&流程</li>
  <li>時間捲動元件</li>
 </ul>
+<div v-click>
+  <img src="/images/index.png" v-drag="'index'" />
+</div>
+<div v-click>
+  <img src="/images/analyze.png" v-drag="'analyze'" />
+</div>
+<div v-click>
+  <img src="/images/my.png" v-drag="'my'" />
+</div>
 
-<!-- 這裡列出了我們整個開發的工作分配，主要分成首頁、分析頁、我的頁面三個大塊，然後再細分功能與流程 -->
+<!--
+這裡列出了我們整個開發的工作分配，主要分成
+
+[click]首頁
+
+[click]分析頁
+
+[click]我的頁面三個大塊，然後再細分功能與流程
+-->
+
 ---
 title: 參加研發營的收穫與成長
 ---
 
 <h1 class="font-extrabold text-[#A4CD44]">參加研發營的收穫與成長</h1>
 
-<h2 class="font-bold">Aaron</h2>
+<div class="flex">
+  <img src="/images/avatar/Aaron.svg" width="50px" />
+  <h2 class="font-bold">Aaron</h2>
+</div>
+<p v-click>很難得有機會能練習到像 AAPD 這種「非常規版面」的網站，在挑戰切版技巧的同時，對我來說也是一次很棒的經驗。</p>
 
-很難得有機會能練習到像 AAPD 這種「非常規版面」的網站，在挑戰切版技巧的同時，對我來說也是一次很棒的經驗。
+<div class="flex">
+  <img src="/images/avatar/Clove.svg" width="50px" />
+  <h2 class="font-bold">Clove</h2>
+</div>
+<p v-click>收穫與成長...</p>
 
-<h2 class="font-bold">Clove</h2>
+<div class="flex">
+  <img src="/images/avatar/Tippy.svg" width="50px" />
+  <h2 class="font-bold">Tippy</h2>
+</div>
 
-收穫與成長...
+<p v-click>收穫與成長...</p>
 
-<h2 class="font-bold">Tippy</h2>
+<style>
+  .flex {
+    display: flex
+  }
+  h2 {
+    padding: 4px;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+</style>
+<!-- 
 
-收穫與成長...
-
+ -->
 ---
 layout: center 
 hideInToc: true
