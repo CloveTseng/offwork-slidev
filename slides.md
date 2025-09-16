@@ -11,11 +11,53 @@ transition: fade-out
 
 <div class="flex flex-col items-center">
   <h1 class="font-extrabold text-[#A4CD44]">OFFWORK</h1>
-  <p>AAPD x 六角學院成果展示</p>
-  設計組：Alvie | Anna | Jerry | Maggie | Oliver | Yien<br />
-  前端組：Aaron | Clove | Tippy
+  <p>丟掉煩惱，讓腦袋準時下班</p>
+  <h3>AAPD x 六角學院成果展示</h3>
+  <h5 v-click="1">設計組：</h5>
+  <div>
+  <span v-click="'+1'"> Jerry <img src="/public/images/avatar/Jerry.svg" width="50px" /> </span>
+  <span v-click> Anna <img src="/public/images/avatar/Anna.svg" width="50px" /> </span>
+  <span v-click> Alvie <img src="/public/images/avatar/Alvie.svg" width="50px" /> </span>
+  <span v-click> Maggie <img src="/public/images/avatar/Maggie.svg" width="50px" /> </span>
+  <span v-click> Oliver <img src="/public/images/avatar/Oliver.svg" width="50px" /> </span>
+  <span v-click> Yien <img src="/public/images/avatar/Yien.svg" width="50px" /> </span>
+  </div>
+  <h5 v-click="7">前端組：</h5>
+  <div>
+  <span v-click="'+1'"> Aaron <img src="/public/images/avatar/Aaron.svg" width="50px" /> </span>
+  <span v-click> Clove <img src="/public/images/avatar/Clove.svg" width="50px" /> </span>
+  <span v-click> Tippy <img src="/public/images/avatar/Tippy.svg" width="50px" /> </span>
+  </div>
 </div>
 
+<style>
+  h3 {
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+  h5 {
+    margin-top: 16px;
+  }
+  div {
+    display: flex;
+  }
+  span {
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+  }
+</style>
+<!-- 
+Hi, 大家好，我是 Clove，我們是 OFFWORK 
+
+
+[click] 這是我們的設計組成員，
+
+[click] 以及前端組的組成
+ -->
 ---
 layout: two-cols
 layoutClass: gap-16
