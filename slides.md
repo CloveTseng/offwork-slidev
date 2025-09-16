@@ -80,11 +80,13 @@ layoutClass: gap-16
 <!-- 
 接著是我們這次成發的簡報流程：
 
-等一下會帶大家參觀我們的開發成果以及整個流程
+等一下會帶大家參觀我們的開發成果以及 APP的流程
 
 然後是我們使用的技術
 
-還有之中
+以及之中遇到的困難和解決方式
+
+最後是收獲與成長
  -->
 ---
 layout: two-cols
@@ -93,6 +95,7 @@ title: 開發成果流程導覽
 
 <h2 class="font-extrabold text-[#A4CD44]">先來看我們的開發成果</h2>
 <a href="https://offwork.clovetseng.dev/" target="_blank">https://offwork.clovetseng.dev/</a>
+<h6>丟掉煩惱，讓腦袋準時下班</h6>
 
 ::right::
 
@@ -105,10 +108,31 @@ title: 開發成果流程導覽
     border: 2px solid #A4CD44;
     border-radius: 16px;
   }
+  h2 {
+    padding-bottom: 16px;
+  }
 </style>
+
+<!-- 
+先來看我們的發表成果：
+
+這是我們這一次開發的健康生活 APP，
+
+1. 首頁：下班的時候已經累積了許多壞心情，所以大家可以看到火山君都快爆發了，
+2. 下班儀式：使用者可以從首頁的『下班儀式』來吼一吼、或是呼吸(點擊『先躺平』離開)
+3. 我的：也可以從個人資料這裡開始下班儀式(點擊)，大家想先大吼還是先呼吸呀~
+4. 首頁：大家可以看到現在火山君已經變成綠色火山君，心情已經好多了
+5. 我的：也可以從個人資訊這邊看到今天的紀錄
+6. 也可以在我的資訊這裡設定呼吸及睡眠的目標，以及開啟通知功能
+6. 查看更多：然後查看更多可以有更詳細的分析資訊
+7. (7/17)：也可以點選日期選擇其他天的資料
+8. 大吼：或是查看每週、每月的更詳細數據
+ -->
 ---
 layout: center
 title: 開發使用的技術
+dragPos:
+  square: 337,207,266,_
 ---
 
 <h1 class="font-extrabold text-[#A4CD44] text-center">開發使用的技術</h1>
@@ -121,43 +145,61 @@ title: 開發使用的技術
       </tr>
     </thead>
     <tbody>
-      <tr v-click>
+      <tr v-click="1">
         <td class="border px-4 py-2">Nuxt 4</td>
         <td class="border px-4 py-2">切版、開路由、拆元件、切 Layout</td>
       </tr>
-      <tr v-click>
+      <tr v-click="2">
         <td class="border px-4 py-2">Tailwind CSS</td>
         <td class="border px-4 py-2">CSS 框架，tailwind config 套用設計系統</td>
       </tr>
-      <tr v-click>
+      <tr v-click="3">
         <td class="border px-4 py-2">sessionStorage</td>
         <td class="border px-4 py-2">紀錄大吼、呼吸時間與是否已放鬆（isRelieved）</td>
       </tr>
-      <tr v-click>
+      <tr v-click="4">
         <td class="border px-4 py-2">GSAP</td>
         <td class="border px-4 py-2">分析頁面動畫</td>
       </tr>
-      <tr v-click>
+      <tr v-click="5">
         <td class="border px-4 py-2">Nuxt Lottie</td>
         <td class="border px-4 py-2">大吼分貝動畫</td>
       </tr>
-      <tr v-click>
+      <tr v-click="6">
         <td class="border px-4 py-2">git</td>
         <td class="border px-4 py-2">版本控制與 Vercel 部署</td>
       </tr>
-      <tr v-click>
+      <tr v-click="7">
         <td class="border px-4 py-2">Slidev</td>
         <td class="border px-4 py-2">製作這份簡報</td>
       </tr>
     </tbody>
   </table>
-  <img src="/images/structure.png" v-click.hide="[2, 3]" />
+<img src="/images/structure.png" v-drag="'square'" v-click="[1, 2]" />
+<img src="/images/tailwind-config.png" v-drag="'square'" v-click="[2, 3]" />
 
-<!-- 
+<!--
 [click] 我們主要是使用 Nuxt 4 來進行開發，會選擇 Nuxt 的原因是因為能夠大量的簡化開發的流程，他可以自動化幫我們生成路由以及自動引入常見的 Vue API ，以及簡化許多環境設定的時間，讓我們可以專注在切版、拆分元件跟 layout 上面
 
-[click] 我們 UI 的部份是使用 TailwindCSS 
- -->
+[click] 在 UI 的部份我們是使用 TailwindCSS，除了能直接在 class 撰寫樣式，省去額外寫 css 的步驟，我們還在 `tailwind.config` 中套用設計系統，能統一風格並且也加速開發效率
+-->
+
+---
+title: 開發中的亮點
+---
+<h1 class="font-extrabold text-[#A4CD44]">開發中的亮點</h1>
+
+<!--
+Aaron：
+開營即結訓
+
+Clove：
+開發中為自己感到驕傲的地方
+
+Tippy：
+開發中為自己感到驕傲的地方
+-->
+
 ---
 layout: center
 title: 開發過程遇到的困難與解決方式
@@ -222,3 +264,8 @@ title: 參加研發營的收穫與成長
 <h2 class="font-bold">Tippy</h2>
 
 收穫與成長...
+
+---
+layout: center 
+---
+# END
