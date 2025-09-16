@@ -122,15 +122,22 @@ title: 開發成果流程導覽
 2. 下班儀式：使用者可以從首頁的『下班儀式』來吼一吼、或是呼吸(點擊『先躺平』離開)
 3. 我的：也可以從個人資料這裡開始下班儀式(點擊)，大家想先大吼還是先呼吸呀~
 4. 首頁：大家可以看到現在火山君已經變成綠色火山君，心情已經好多了
-5. 我的：也可以從個人資訊這邊看到今天的紀錄
-6. 也可以在我的資訊這裡設定呼吸及睡眠的目標，以及開啟通知功能
+5. 我的：可以從個人資訊這邊看到今天的活動紀錄
+6. 在我的資訊這裡設定呼吸及睡眠的目標，以及開啟通知功能
 6. 查看更多：然後查看更多可以有更詳細的分析資訊
 7. (7/17)：也可以點選日期選擇其他天的資料
 8. 大吼：或是查看每週、每月的更詳細數據
  -->
+
 ---
 layout: center
 title: 開發使用的技術
+dragPos:
+  foo: 653,132,325,_
+  tailwind: 698,114,262,_
+  after: 72,310,866,292
+  charts: 617,270,237,145
+  lottie: 560,240,171,253
 ---
 
 <h1 class="font-extrabold text-[#A4CD44] text-center">開發使用的技術</h1>
@@ -157,7 +164,7 @@ title: 開發使用的技術
       </tr>
       <tr v-click="4">
         <td class="border px-4 py-2">GSAP</td>
-        <td class="border px-4 py-2">分析頁面動畫</td>
+        <td class="border px-4 py-2">分析頁面圖表載入動畫</td>
       </tr>
       <tr v-click="5">
         <td class="border px-4 py-2">Nuxt Lottie</td>
@@ -173,31 +180,69 @@ title: 開發使用的技術
       </tr>
     </tbody>
   </table>
-  <v-drag pos="337,207,266,_">
-    <img src="/images/structure.png" v-click="[1, 2]" />
-  </v-drag>
-  <v-drag pos="337,207,266,_">
-    <img src="/images/tailwind-config.png" v-click="[2, 3]" />
-  </v-drag>
-  <v-drag pos="337,207,266,_">
-    <img src="/images/before.png" v-click="[3, 4]" />
-  </v-drag>
-  <v-drag pos="337,207,266,_">
-    <img src="/images/after.png" v-click="[3, 4]" />
-  </v-drag>
+  <div v-click="[1,2]">
+    <img src="/images/structure.png" v-drag="'foo'" />
+  </div>
+  <div v-click="[2,3]">
+  <img src="/images/tailwind-config.png" v-drag="'tailwind'" />
+  </div>
+  <div v-click="[3,4]">
+  <img src="/images/after.png" v-drag="'after'" />
+  </div>
+  <div v-click="[4,5]">
+  <img src="/images/charts.png" v-drag="'charts'" />
+  </div>
+  <div v-click="[5,6]">
+  <img src="/images/lottie.png" v-drag="'lottie'" />
+  </div>
 
 <!--
 [click] 我們主要是使用 Nuxt 4 來進行開發，會選擇 Nuxt 的原因是因為能夠大量的簡化開發的流程，他可以自動化幫我們生成路由以及自動引入常見的 Vue API ，以及簡化許多環境設定的時間，讓我們可以專注在切版、拆分元件跟 layout 上面
 
 [click] 在 UI 的部份我們是使用 TailwindCSS，除了能直接在 class 撰寫樣式，省去額外寫 css 的步驟，我們還在 `tailwind.config` 中套用設計系統，能統一風格並且也加速開發效率
 
-[click] 在呼吸或大吼之後，就會把資訊存在 sessionStorage 裡面，
+[click] 在呼吸或大吼之後，就會把資訊存在 sessionStorage 裡面，`isRelieved` 從 false 改為 true ，並且紀錄大吼的秒數
+
+[click] 圖表載入時的動畫則是使用了 GSAP 來處理
+
+[click] 在大吼的動畫我們使用了 lottie 大吼的動畫
+
+[click] 最後是使用 git 來進行版本控作及協作，並且部署到 vercel 上
 -->
 
 ---
 title: 開發中的亮點
+dragPos:
+  aaron: 351,12,325,_
 ---
+
 <h1 class="font-extrabold text-[#A4CD44]">開發中的亮點</h1>
+
+<div class="flex">
+  <img src="/images/avatar/Aaron.svg" width="50px" />
+  <h4 v-click>Aaron：開營即結訓</h4>
+</div>
+<div v-click="[1,2]">
+    <img src="/images/aaron-highlight.png" v-drag="'aaron'" />
+</div>
+<div class="flex">
+  <img src="/images/avatar/Clove.svg" width="50px" />
+  <h4 v-click>Clove：</h4>
+</div>
+<div class="flex">
+  <img src="/images/avatar/Tippy.svg" width="50px" />
+  <h4 v-click>Tippy：</h4>
+</div>
+
+<style>
+  .flex {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+</style>
 
 <!--
 Aaron：
@@ -257,6 +302,7 @@ title: 團隊協作、工作分配
  <li>時間捲動元件</li>
 </ul>
 
+<!-- 這裡列出了我們整個開發的工作分配，主要分成首頁、分析頁、我的頁面三個大塊，然後再細分功能與流程 -->
 ---
 title: 參加研發營的收穫與成長
 ---
