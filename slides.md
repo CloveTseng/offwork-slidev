@@ -15,18 +15,18 @@ transition: fade-out
   <h3>AAPD x 六角學院成果展示</h3>
   <h5 v-click="1">設計組：</h5>
   <div>
-  <span v-click="'+1'"> Jerry <img src="/public/images/avatar/Jerry.svg" width="50px" /> </span>
-  <span v-click> Anna <img src="/public/images/avatar/Anna.svg" width="50px" /> </span>
-  <span v-click> Alvie <img src="/public/images/avatar/Alvie.svg" width="50px" /> </span>
-  <span v-click> Maggie <img src="/public/images/avatar/Maggie.svg" width="50px" /> </span>
-  <span v-click> Oliver <img src="/public/images/avatar/Oliver.svg" width="50px" /> </span>
-  <span v-click> Yien <img src="/public/images/avatar/Yien.svg" width="50px" /> </span>
+  <span v-click="'+1'"> Jerry <img src="/images/avatar/Jerry.svg" width="50px" /> </span>
+  <span v-click> Anna <img src="/images/avatar/Anna.svg" width="50px" /> </span>
+  <span v-click> Alvie <img src="/images/avatar/Alvie.svg" width="50px" /> </span>
+  <span v-click> Maggie <img src="/images/avatar/Maggie.svg" width="50px" /> </span>
+  <span v-click> Oliver <img src="/images/avatar/Oliver.svg" width="50px" /> </span>
+  <span v-click> Yien <img src="/images/avatar/Yien.svg" width="50px" /> </span>
   </div>
   <h5 v-click="7">前端組：</h5>
   <div>
-  <span v-click="'+1'"> Aaron <img src="/public/images/avatar/Aaron.svg" width="50px" /> </span>
-  <span v-click> Clove <img src="/public/images/avatar/Clove.svg" width="50px" /> </span>
-  <span v-click> Tippy <img src="/public/images/avatar/Tippy.svg" width="50px" /> </span>
+  <span v-click="'+1'"> Aaron <img src="/images/avatar/Aaron.svg" width="50px" /> </span>
+  <span v-click> Clove <img src="/images/avatar/Clove.svg" width="50px" /> </span>
+  <span v-click> Tippy <img src="/images/avatar/Tippy.svg" width="50px" /> </span>
   </div>
 </div>
 
