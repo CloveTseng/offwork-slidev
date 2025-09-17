@@ -190,7 +190,7 @@ dragPos:
   <img src="/images/tailwind-config.png" v-drag="'tailwind'" />
   </div>
   <div v-click="[3,4]">
-  <img src="/images/after.webp" v-drag="'after'" />
+  <img src="/images/after.png" v-drag="'after'" />
   </div>
   <div v-click="[4,5]">
   <img src="/images/charts.webp" v-drag="'charts'" />
