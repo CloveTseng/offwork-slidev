@@ -193,7 +193,7 @@ dragPos:
   <img src="/images/after.png" v-drag="'after'" />
   </div>
   <div v-click="[4,5]">
-  <img src="/images/charts.webp" v-drag="'charts'" />
+  <img src="/images/charts.png" v-drag="'charts'" />
   </div>
   <div v-click="[5,6]">
   <img src="/images/lottie.png" v-drag="'lottie'" />
