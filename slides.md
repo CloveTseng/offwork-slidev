@@ -130,53 +130,53 @@ title: 開發成果流程導覽
  -->
 
 ---
-layout: center
+layout: two-cols
 title: 開發使用的技術
 dragPos:
-  foo: 653,132,325,_
-  tailwind: 698,114,262,_
-  after: 72,310,866,292
-  charts: 617,270,237,145
-  lottie: 560,240,171,253
+  foo: 536,76,418,_
+  tailwind: 555,12,355,_
+  after: 509,161,559,327
+  charts: 593,251,293,179
+  lottie: 603,131,243,360
 ---
 
-<h1 class="font-extrabold text-[#A4CD44] text-center">開發使用的技術</h1>
+<h2 class="font-extrabold text-[#A4CD44] text-center pb-2">開發使用的技術</h2>
 
   <table class="border-collapse">
     <thead>
       <tr>
-        <th class="border px-4 py-2 text-left">技術</th>
-        <th class="border px-4 py-2 text-left">說明</th>
+        <th class="border px-4 py-1 text-left">技術</th>
+        <th class="border px-4 py-1 text-left">說明</th>
       </tr>
     </thead>
     <tbody>
       <tr v-click="1">
-        <td class="border px-4 py-2">Nuxt 4</td>
-        <td class="border px-4 py-2">切版、開路由、拆元件、切 Layout</td>
+        <td class="border px-4 py-1">Nuxt 4</td>
+        <td class="border px-4 py-1">切版、開路由、拆元件、切 Layout</td>
       </tr>
       <tr v-click="2">
-        <td class="border px-4 py-2">Tailwind CSS</td>
-        <td class="border px-4 py-2">CSS 框架，tailwind config 套用設計系統</td>
+        <td class="border px-4 py-1">Tailwind CSS</td>
+        <td class="border px-4 py-1">CSS 框架，tailwind config 套用設計系統</td>
       </tr>
       <tr v-click="3">
-        <td class="border px-4 py-2">sessionStorage</td>
-        <td class="border px-4 py-2">紀錄大吼、呼吸時間與是否已放鬆（isRelieved）</td>
+        <td class="border px-4 py-1">sessionStorage</td>
+        <td class="border px-4 py-1">紀錄大吼、呼吸時間與是否已放鬆（isRelieved）</td>
       </tr>
       <tr v-click="4">
-        <td class="border px-4 py-2">GSAP</td>
-        <td class="border px-4 py-2">分析頁面圖表載入動畫</td>
+        <td class="border px-4 py-1">GSAP</td>
+        <td class="border px-4 py-1">分析頁面圖表載入動畫</td>
       </tr>
       <tr v-click="5">
-        <td class="border px-4 py-2">Nuxt Lottie</td>
-        <td class="border px-4 py-2">大吼分貝動畫</td>
+        <td class="border px-4 py-1">Nuxt Lottie</td>
+        <td class="border px-4 py-1">大吼分貝動畫</td>
       </tr>
       <tr v-click="6">
-        <td class="border px-4 py-2">git</td>
-        <td class="border px-4 py-2">版本控制與 Vercel 部署</td>
+        <td class="border px-4 py-1">git</td>
+        <td class="border px-4 py-1">版本控制與 Vercel 部署</td>
       </tr>
       <tr v-click="7">
-        <td class="border px-4 py-2">Slidev</td>
-        <td class="border px-4 py-2">製作這份簡報</td>
+        <td class="border px-4 py-1">Slidev</td>
+        <td class="border px-4 py-1">製作這份簡報</td>
       </tr>
     </tbody>
   </table>
@@ -213,46 +213,48 @@ dragPos:
 ---
 title: 開發中的亮點
 dragPos:
-  aaron: 351,12,325,_
+  aaron: 479,12,325,_
+  highlight-1: 401,198,416,87
+  highlight-meta: 401,287,392,180
+  highlight-3: 336,149,588,315
 ---
 
 <h1 class="font-extrabold text-[#A4CD44]">開發中的亮點</h1>
-
 <div class="flex">
   <img src="/images/avatar/Aaron.svg" width="50px" />
-  <h4 v-click>Aaron：開營即結訓</h4>
+  <img src="/images/avatar/Clove.svg" width="50px" />
+  <img src="/images/avatar/Tippy.svg" width="50px" />
 </div>
+<v-clicks>
+  <li>捲佑哥的『開營即結訓』風雲</li>
+  <li>高手會認真寫 Meta Tags</li>
+  <li>除了開發也要注重效能</li>
+</v-clicks>
 <div v-click="[1,2]">
   <img src="/images/aaron-highlight.png" v-drag="'aaron'" />
 </div>
-<div class="flex">
-  <img src="/images/avatar/Clove.svg" width="50px" />
-  <h4 v-click>Clove：</h4>
+<div v-click="[2,3]">
+  <img src="/images/highlight-1.png" v-drag="'highlight-1'" />
+  <img src="/images/highlight-meta.png" v-drag="'highlight-meta'" />
 </div>
-<div class="flex">
-  <img src="/images/avatar/Tippy.svg" width="50px" />
-  <h4 v-click>Tippy：</h4>
+<div v-click="[3,4]">
+  <img src="/images/highlight-3.png" v-drag="'highlight-3'" />
 </div>
 
 <style>
   .flex {
-    padding: 16px 0;
     display: flex;
-    align-items: center;
-    gap: 8px;
+    margin-bottom: 16px;
+  }
+  img {
+    padding: 2px;
   }
 
 </style>
 
 <!--
-Aaron：
-開營即結訓
-
-Clove：
-開發中為自己感到驕傲的地方
-
-Tippy：
-開發中為自己感到驕傲的地方
+接著想要介紹我們專題中的亮點：
+1. 捲佑哥的開營即結訓風雲，開營當天被發現已經做完了初切版
 -->
 
 ---
