@@ -488,20 +488,27 @@ title: 參加研發營的收穫與成長
   <img src="/images/avatar/Aaron.svg" width="50px" />
   <h2 class="font-bold">Aaron</h2>
 </div>
-<p v-click>很難得有機會能練習到像 AAPD 這種「非常規版面」的網站，在挑戰切版技巧的同時，對我來說也是一次很棒的經驗。</p>
+<ul v-click class="mb-30">
+  <li>有機會開發「非常規版面」的網站</li>
+  <li>手機框及動畫很好玩</li>
+</ul>
 
 <div class="flex">
   <img src="/images/avatar/Clove.svg" width="50px" />
   <h2 class="font-bold">Clove</h2>
 </div>
-<p v-click>收穫與成長...</p>
+<ul v-click class="mb-30">
+  <li>學習並實戰 Vue3 + Nuxt 框架</li>
+  <li>細節思維</li>
+  <li>多了很多面試機會(?)</li>
+</ul>
 
 <div class="flex">
   <img src="/images/avatar/Tippy.svg" width="50px" />
   <h2 class="font-bold">Tippy</h2>
 </div>
 
-<div v-click>
+<div v-click class="mb-30">
 <ul>
 <li>切版技巧與 Nuxt 框架</li>
 <li>設計師與工程師的協作模式</li>
@@ -516,13 +523,18 @@ title: 參加研發營的收穫與成長
   h2 {
     padding: 4px;
   }
-  p {
-    margin-bottom: 30px;
+  .mb-30 {
+    margin-bottom: 20px;
   }
 </style>
 
 <!--
-Tippy : 這次參與 AAPD 的活動，除了練習切版技巧與 Nuxt 框架的應用外，最重要的收穫是更深入地了解了設計師與工程師之間的協作模式。其中，讓我最意想不到的收穫是在這段過程中認識了墨和捲佑，與他們一起開發的時候是會被他們的積極性給影響的（畢竟捲神開營即結訓）。雖然這樣的節奏多少會帶來一些壓力，但那是一種良性的推動力（大家一起捲起來～～）。這次的經歷，也許不是技術層面的飛躍，卻是我在心態上非常寶貴的一次成長。
+[click] Aaron：很難得有機會開發到這種非常規的版面，實作了一些平常工作中不常使用到的技術，在挑戰切版技巧的同時，對我來說也是一次很棒的經驗。
+
+[click] Clove : 本來參加研發營，只是想著多一份作品，但意外的收獲是多了一個 Nuxt.js (Vue3) 的實戰開發經驗。更重要的是從單純寫程式的工程師轉變為一個思考架構、注重細節的工程師。
+明年沒意外的話，還會再看到我的出現，期待又是一個不同的成長與經歷。
+
+[click] Tippy : 這次參與 AAPD 的活動，除了練習切版技巧與 Nuxt 框架的應用外，最重要的收穫是更深入地了解了設計師與工程師之間的協作模式。其中，讓我最意想不到的收穫是在這段過程中認識了墨和捲佑，與他們一起開發的時候是會被他們的積極性給影響的（畢竟捲神開營即結訓）。雖然這樣的節奏多少會帶來一些壓力，但那是一種良性的推動力（大家一起捲起來～～）。這次的經歷，也許不是技術層面的飛躍，卻是我在心態上非常寶貴的一次成長。
 -->
 
 ---
