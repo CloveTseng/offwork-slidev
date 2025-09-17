@@ -187,10 +187,10 @@ dragPos:
   <img src="/images/tailwind-config.png" v-drag="'tailwind'" />
   </div>
   <div v-click="[3,4]">
-  <img src="/images/after.png" v-drag="'after'" />
+  <img src="/images/after.webp" v-drag="'after'" />
   </div>
   <div v-click="[4,5]">
-  <img src="/images/charts.png" v-drag="'charts'" />
+  <img src="/images/charts.webp" v-drag="'charts'" />
   </div>
   <div v-click="[5,6]">
   <img src="/images/lottie.png" v-drag="'lottie'" />
@@ -214,9 +214,10 @@ dragPos:
 title: 開發中的亮點
 dragPos:
   aaron: 479,12,325,_
-  highlight-1: 401,198,416,87
-  highlight-meta: 401,287,392,180
-  highlight-3: 336,149,588,315
+  highlight-1: 436,140,416,87
+  highlight-meta: 437,226,392,180
+  highlight-clock: 458,195,403,105
+  highlight-3: 371,148,588,315
 ---
 
 <h1 class="font-extrabold text-[#A4CD44]">開發中的亮點</h1>
@@ -227,17 +228,21 @@ dragPos:
 </div>
 <v-clicks>
   <li>捲佑哥的『開營即結訓』風雲</li>
-  <li>高手會認真寫 Meta Tags</li>
-  <li>除了開發也要注重效能</li>
+  <li>高手在乎細節</li>
+  <li>https://offwork.clovetseng.dev</li>
+  <li>不只是開發，也注重效能</li>
 </v-clicks>
 <div v-click="[1,2]">
-  <img src="/images/aaron-highlight.png" v-drag="'aaron'" />
+  <img src="/images/aaron-highlight.webp" v-drag="'aaron'" />
 </div>
 <div v-click="[2,3]">
   <img src="/images/highlight-1.png" v-drag="'highlight-1'" />
   <img src="/images/highlight-meta.png" v-drag="'highlight-meta'" />
 </div>
 <div v-click="[3,4]">
+  <img src="/images/highlight-clock.png" v-drag="'highlight-clock'" />
+</div>
+<div v-click="[4,5]">
   <img src="/images/highlight-3.png" v-drag="'highlight-3'" />
 </div>
 
@@ -254,7 +259,16 @@ dragPos:
 
 <!--
 接著想要介紹我們專題中的亮點：
-1. 捲佑哥的開營即結訓風雲，開營當天被發現已經做完了初切版
+
+[click] 捲佑哥的開營即結訓風雲，開營當天被發現已經做完了初切版，並且也因為這一波，今年很多組別都套了手機框，一年成發比一年高級ww 不是說好的切版嗎…
+
+[click] 過去在拿到設計稿後，我通常會直接進入開發階段。思考佈局、拆分元件、定義變數，然後開始選擇適合的技術來實現，
+
+但這次，在完成環境設定後，參考了捲哥的切版作業，第一次花時間去研究並撰寫 meta tags，這些看似不起眼的小事情，卻會大大提升整個專案對於 SEO 及社群媒體的分享，
+
+[click] 以及就算是手機模擬框，也要插一個真的時鐘在這裡的小細節(可以到網站去看)
+
+[click] 這是 google 的網站 pagespeed 測試出來的結果，過去開發時我們專注在把東西做出來，這次注重網站除了完整，也要跑得流暢，例如將圖片進行壓縮及將 png 轉成更輕量的 WebP 格式
 -->
 
 ---
@@ -311,7 +325,7 @@ dragPos:
   <img src="/images/index.png" v-drag="'index'" />
 </div>
 <div v-click>
-  <img src="/images/analyze.png" v-drag="'analyze'" />
+  <img src="/images/analyze.webp" v-drag="'analyze'" />
 </div>
 <div v-click>
   <img src="/images/my.png" v-drag="'my'" />
