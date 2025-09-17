@@ -1,7 +1,7 @@
 ---
 layout: cover
-highlighter: default
 title: OFFWORK
+highlighter: shiki
 favicon: "/favicon.ico"
 fonts:
   sans: "Noto Sans TC"
@@ -245,7 +245,7 @@ dragPos:
 <div v-click="[3,4]">
   <img src="/images/highlight-clock.png" v-drag="'highlight-clock'" />
 </div>
-<div v-click="[4,5]">
+<div v-click="4">
   <img src="/images/highlight-3.png" v-drag="'highlight-3'" />
 </div>
 
@@ -282,18 +282,44 @@ title: 開發過程遇到的困難與解決方式
 <h1 class="font-extrabold text-[#A4CD44]">開發過程遇到的困難與解決方式...</h1>
 
 <!--
-Aaron：
-一開始在做「平穩呼吸法」呼吸練習頁面時，因為動畫效果比較少見又有點複雜，加上我對 mask 的用法也不太熟，所以卡了滿久。後來花了很多時間研究、問 GPT，才把問題解決。
-
-Clove：
-遇到的困難與解決方式...
-
-Tippy：
-遇到的困難與解決方式...
+接下來說明一下我們在開發時遇到的困難及解決辦法
 -->
 
 ---
+layout: two-cols
+title: Aaron 的困難與解決
+hideInToc: true
+---
 
+<h2>Aaron - 困難與解決方式</h2>
+<ul>
+  <li>動畫效果</li>
+</ul>
+
+::right::
+
+<Transform :scale="0.6">
+<iframe src="https://offwork.clovetseng.dev/find-peace/calm-breathe" width="375px" height="812px" class="border"></iframe>
+</Transform>
+
+<style>
+.border {
+  border: 2px solid #A4CD44;
+  border-radius: 16px;
+}
+h2 {
+  padding-bottom: 16px;
+}
+</style>
+
+<!-- 
+Aaron：
+一開始在做「平穩呼吸法」呼吸練習頁面時，因為動畫效果比較少見又有點複雜，加上我對 mask 的用法也不太熟，所以卡了滿久。後來花了很多時間研究、問 GPT，才把問題解決。 
+-->
+---
+title: Tippy 的困難與解決
+hideInToc: true
+---
 <h2>Tippy - 困難與解決方式</h2>
 
 <div class="flex gap-5">
@@ -313,7 +339,7 @@ Tippy：
 
 <div>
 
-1. 火山君離開視線後觸發特定樣式
+2. 火山君離開視線後觸發特定樣式
 
 - 使用 `IntersectionObserver(callback,[option])`
 <div class="flex gap-4 mb-2">
@@ -325,17 +351,86 @@ Tippy：
 
 </div>
 
+<style>
+h2 {
+  padding-bottom: 16px;
+}
+</style>
+
 <!--
 Tippy：
 在這次切版過程中，遇到了一些以往沒有實作過的特殊樣式和互動情境，例如 scrollbar 資料的無限循環，以及火山君離開視線後觸發特定樣式的設計。這些需求對我來說都是全新的挑戰，一開始在實作時卡關了好一陣子。只要當我卡了一段時間後，我通常會去請教 Claude。雖然他給的程式碼不一定能直接執行，但他提供的解法邏輯與思路能幫我打開新的方向。
 -->
 
 ---
+layout: two-cols
+title: Clove 的困難與解決
+hideInToc: true
+dragPos:
+  foo: 819,194,62,_,31
+---
+
+<h2>Clove - 困難與解決方式</h2>
+<ul>
+  <li v-click="1"> Vue3 還不會就要直上 Nuxt 太刺激了吧!!!</li>
+  <li v-click="5">元件傳值傳好傳滿</li>
+</ul>
+
+
+::right::
+
+<img v-click="2" src="/images/clove-difficulty-1.png" />
+<img v-click="2" src="/images/clove-difficulty-2.png" />
+<img v-click="3" src="/images/clove-difficulty-3.png" />
+
+<div v-click="4">
+  <img src="/images/clove-1.svg" v-drag="'foo'" />
+</div>
+
+```js {hide|hide|hide|hide|hide|hide|1,3|5-8}
+// 父元件
+<div v-if="!chartData" class="text-xs text-neutral-300 py-2">資料載入中…</div>
+<ChartsTimelineChart v-else :chart-data="chartData" />
+
+// 子元件
+const props = defineProps({
+  chartData: {
+    type: Object,
+    required: true,
+  }
+});
+```
+
+<style>
+h2 {
+  padding-bottom: 16px;
+}
+img {
+  margin-top: 4px;
+}
+li {
+  margin-bottom: 140px
+}
+</style>
+
+<!--
+[click]
+ 在捲佑哥發現我們同一組的時候，就跑來問我說：[click] 你會 vue 嗎？當時我剛開始 vue 的新手營不久，就是一腦子可以的吧行的吧!
+
+[click] 捲哥就回我：那我們就用 nuxt + tailwind 來開發，
+[click] 所以我新手營上的特別特別的認真
+
+[click] 再來我必須說我在之前 React 班的時候傳值真心沒學好，導致我拆元件後元件一多的狀況下，對於資料的流動和管理總是感到很混亂。
+
+[click] 所以這次認真去學習 Vue 的傳值方式也會重新反思當時專題時 React 的寫法是不是可以更好，並且去深入理解如何讓資料流向變得清晰、可追溯
+-->
+
+---
 title: 團隊協作、工作分配
 dragPos:
-  index: 341,148,157,308
-  analyze: 505,149,160,310
-  my: 678,148,162,310
+  index: 361,151,157,308
+  analyze: 537,152,157,308
+  my: 710,152,157,308
 ---
 
 <h1 class="font-extrabold text-[#A4CD44]">團隊協作、工作分配</h1>
@@ -362,18 +457,19 @@ dragPos:
  <li>我的頁面&流程</li>
  <li>時間捲動元件</li>
 </ul>
+
 <div v-click>
   <img src="/images/index.png" v-drag="'index'" />
 </div>
 <div v-click>
-  <img src="/images/analyze.webp" v-drag="'analyze'" />
+  <img src="/images/analyze.png" v-drag="'analyze'" />
 </div>
 <div v-click>
   <img src="/images/my.png" v-drag="'my'" />
 </div>
 
 <!--
-這裡列出了我們整個開發的工作分配，主要分成
+接著，這裡列出了我們整個開發的工作分配，主要分成
 
 [click]首頁
 
