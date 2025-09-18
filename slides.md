@@ -139,8 +139,8 @@ dragPos:
   foo: 536,76,418,_
   tailwind: 555,12,355,_
   after: 509,161,559,327
-  charts: 593,251,293,179
-  lottie: 603,131,243,360
+  charts: 518,203,293,179
+  lottie: 513,118,243,360
 ---
 
 <h2 class="font-extrabold text-[#A4CD44] text-center pb-2">開發使用的技術</h2>
@@ -157,47 +157,162 @@ dragPos:
         <td class="border px-4 py-1">Nuxt 4</td>
         <td class="border px-4 py-1">切版、開路由、拆元件、切 Layout</td>
       </tr>
-      <tr v-click="2">
+      <tr v-click="3">
         <td class="border px-4 py-1">Tailwind CSS</td>
         <td class="border px-4 py-1">CSS 框架，tailwind config 套用設計系統</td>
       </tr>
-      <tr v-click="3">
+      <tr v-click="4">
         <td class="border px-4 py-1">sessionStorage</td>
         <td class="border px-4 py-1">紀錄大吼、呼吸時間與是否已放鬆（isRelieved）</td>
       </tr>
-      <tr v-click="4">
+      <tr v-click="6">
         <td class="border px-4 py-1">GSAP</td>
         <td class="border px-4 py-1">分析頁面圖表載入動畫</td>
       </tr>
-      <tr v-click="5">
+      <tr v-click="7">
         <td class="border px-4 py-1">Nuxt Lottie</td>
         <td class="border px-4 py-1">大吼分貝動畫</td>
       </tr>
-      <tr v-click="6">
+      <tr v-click="8">
         <td class="border px-4 py-1">git</td>
         <td class="border px-4 py-1">版本控制與 Vercel 部署</td>
       </tr>
-      <tr v-click="7">
+      <tr v-click="9">
         <td class="border px-4 py-1">Slidev</td>
         <td class="border px-4 py-1">製作這份簡報</td>
       </tr>
     </tbody>
   </table>
-  <div v-click="[1,2]">
-    <img src="/images/structure.png" v-drag="'foo'" />
-  </div>
-  <div v-click="[2,3]">
-  <img src="/images/tailwind-config.png" v-drag="'tailwind'" />
-  </div>
-  <div v-click="[3,4]">
-  <img src="/images/after.png" v-drag="'after'" />
-  </div>
-  <div v-click="[4,5]">
+  <div v-click="[6,7]">
   <img src="/images/charts.png" v-drag="'charts'" />
   </div>
-  <div v-click="[5,6]">
+  <div v-click="[7,8]">
   <img src="/images/lottie.png" v-drag="'lottie'" />
   </div>
+
+::right::
+
+<div v-click="[1,6]">
+
+````md magic-move
+```vue
+<script setup>
+
+</script>
+<template>
+
+</template>
+```
+```vue
+<script setup>
+useSeoMeta({
+  title: "分析 | 健康生活 OFFWORK APP",
+  ogTitle: "分析 | 健康生活 OFFWORK APP",
+});
+definePageMeta({
+  header: {
+    title: "分析",
+  },
+});
+</script>
+<template>
+
+</template>
+```
+```vue
+<script setup>
+useSeoMeta({
+  title: "分析 | 健康生活 OFFWORK APP",
+  ogTitle: "分析 | 健康生活 OFFWORK APP",
+});
+definePageMeta({
+  header: {
+    title: "分析",
+  },
+});
+</script>
+<template>
+  <CommonModal v-model:show="openModal">
+    <CommonCalendar @select-day="handleCalendarSelect"/>
+  </CommonModal>
+  <ChartsHalfCircleBar :chartTitle="chartTitle"/>
+  <CardVolcanokun />
+</template>
+```
+```json
+theme: {
+extend: {
+  // 標準色
+  colors: {
+    // 主色
+    primary: {
+      "50": "#F7FBEA",
+      "100": "#EDF6D1",
+      "200": "#DBEDA9",
+      "300": "#C1E076",
+      DEFAULT: "#A4CD44",
+      "500": "#8AB42E",
+      "600": "#6B9020",
+      "700": "#516E1D",
+      "800": "#43581C",
+      "900": "#3A4B1C",
+      "950": "#1C290A",
+    },
+    // 副色
+    secondary: {
+      "50": "#EFF9FC",
+      "100": "#D8EFF6",
+      "200": "#B3E0EE",
+      "300": "#7FC9E1",
+      DEFAULT: "#5AB3D2",
+      "500": "#288DB2",
+      "600": "#237296",
+      "700": "#245D7A",
+      "800": "#254E65",
+      "900": "#234256",
+      "950": "#122A3A",
+    },
+    // 中性色
+    neutral: {
+      "50": "#F7F7F8",
+      "100": "#EFEEF0",
+      "200": "#DBDADD",
+      "300": "#BAB9C0",
+      "400": "#959595",
+      "500": "#777582",
+      "600": "#615F6A",
+      "700": "#504E56",
+      DEFAULT: "#44434A",
+      "850": "#3C3C3E",
+      "900": "#333339",
+      "950": "#29292D",
+      "1000": "#1A1A1C"
+    }}}}
+```
+```js {1}
+const haveData = ref(false);
+
+onMounted(() => {
+observer = createObserver();
+observer.observe(nav.value);
+if (import.meta.client) {
+  haveData.value = sessionStorage.getItem("isRelieved") == "true";
+}
+});
+```
+```js {1,7}
+const haveData = ref(true);
+
+onMounted(() => {
+observer = createObserver();
+observer.observe(nav.value);
+if (import.meta.client) {
+  haveData.value = sessionStorage.getItem("isRelieved") == "true";
+}
+});
+```
+````
+</div>
 
 <!--
 [click] 我們主要是使用 Nuxt 4 來進行開發，會選擇 Nuxt 的原因是因為能夠大量的簡化開發的流程，他可以自動化幫我們生成路由以及自動引入常見的 Vue API ，以及簡化許多環境設定的時間，讓我們可以專注在切版、拆分元件跟 layout 上面
@@ -219,7 +334,7 @@ dragPos:
   aaron: 479,12,325,_
   highlight-1: 436,140,416,87
   highlight-meta: 437,226,392,180
-  highlight-clock: 458,195,403,105
+  highlight-clock: 448,206,332,72
   highlight-3: 371,148,588,315
 ---
 
