@@ -54,6 +54,8 @@ hideInToc: true
 
 <!--
 Hi, 大家好，我是 Clove，我們是 OFFWORK 
+OFFWORK 是一款心靈健康 APP ，
+「下班儀式引導」幫助使用者切斷工作連結、釋放壓力，建立可持續的「心理下班習慣」
 
 [click] 我們的設計組成員有以下這六位…，[click]
 
@@ -315,11 +317,11 @@ if (import.meta.client) {
 </div>
 
 <!--
-[click] 我們主要是使用 Nuxt 4 來進行開發，會選擇 Nuxt 的原因是因為能夠大量的簡化開發的流程，他可以自動化幫我們生成路由以及自動引入常見的 Vue API ，以及簡化許多環境設定的時間，讓我們可以專注在切版、拆分元件跟 layout 上面
+[click][click] 我們主要是使用 Nuxt 4 來進行開發，會選擇 Nuxt 的原因是因為能夠大量的簡化開發的流程，他可以自動化幫我們生成路由以及自動引入常見的 Vue API ，以及簡化許多環境設定的時間，讓我們可以專注在切版、拆分元件跟 layout 上面
 
 [click] 在 UI 的部份我們是使用 TailwindCSS，除了能直接在 class 撰寫樣式，省去額外寫 css 的步驟，我們還在 `tailwind.config` 中套用設計系統，能統一風格並且也加速開發效率
 
-[click] 在呼吸或大吼之後，就會把資訊存在 sessionStorage 裡面，`isRelieved` 從 false 改為 true ，並且紀錄大吼的秒數
+[click][click] 在呼吸或大吼之後，就會把資訊存在 sessionStorage 裡面，`isRelieved` 從 false 改為 true ，並且紀錄大吼的秒數
 
 [click] 圖表載入時的動畫則是使用了 GSAP 來處理
 
