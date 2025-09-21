@@ -101,6 +101,21 @@ title: 開發成果流程導覽
 <h2 class="font-extrabold text-[#A4CD44]">先來看我們的開發成果</h2>
 <a href="https://offwork.clovetseng.dev/" target="_blank">https://offwork.clovetseng.dev/</a>
 <h6>丟掉煩惱，讓腦袋準時下班</h6>
+<table>
+  <thead>
+    <tr>
+      <th>平靜火山君</th>
+      <th>爆炸火山君</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="/images/green-volcano.webp" alt="" width="100px" height="300px" /></td>
+      <td><img src="/images/red-volcano.webp" alt="" width="100px" height="300px" /></td>
+    </tr>
+  </tbody>
+</table>
+
 
 ::right::
 
